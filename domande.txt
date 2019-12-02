@@ -1,0 +1,8 @@
+Come si ricavano i valori dall’URL? es:  /info/:state/
+i valori si ottengono tramila la variabile state in questo caso
+Come potresti fare la stessa cosa utilizzando la notazione url/? (testa la tua risposta direttamente nell’applicazione con l’url /query/state?). Puoi far riferimento all’esercizio 02.2
+router.get('/info2', function(req, res, next){ //Rendiamo lo stato un parametro
+ res.send(country.info(req.query.state));
+})
+Come si ottengono le informazioni di uno stato dalla libreria country.js?
+Le informazioni si ottengono tramite country.info
